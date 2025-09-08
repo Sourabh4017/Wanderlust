@@ -1,18 +1,23 @@
 {
-  "engines": {
-    "node": "22.13.1"
-  },
+  // "engines": {
+  //   "node": "22.13.1"
+  // },
 
   "name": "majorproject",
   "version": "1.0.0",
-  "main": "index.js",
+  "description": "Wanderlust Project Deployment",
+  "main": "app.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node app.js",
+    "dev": "nodemon app.js",
+    "seed": "node init/index.js"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "description": "",
+  "engines": {
+    "node": "22.13.1"
+  },
   "dependencies": {
     "cloudinary": "^1.41.3",
     "connect-flash": "^0.1.1",
@@ -35,3 +40,5 @@
     "passport-local-mongoose": "^8.0.0"
   }
 }
+
+
